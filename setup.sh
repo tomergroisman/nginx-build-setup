@@ -37,4 +37,7 @@ echo "Verify installation files" && sleep 1
 ls -l /etc/nginx/
 nginx -V
 
+echo "Setting systemd configuration" && sleep 1
+cp nginx.service /lib/systemd/system/nginx.service
+
 echo "done."
